@@ -10,8 +10,6 @@ int main(){
     scanf("%d %d",&a, &b);
 
 
-
-
     printf ("The Armstrong numbers are:");
          for (int i = a; i <= b; i++)
     {
@@ -22,8 +20,6 @@ int main(){
 
     }
     printf("\n");
-
-
 
     printf("The Palindromes are:");
 
@@ -50,8 +46,6 @@ int main(){
 
     }
     printf("\n");
-
-
 
     printf("The Strong numbers are:");
 
