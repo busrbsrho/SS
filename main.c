@@ -5,19 +5,18 @@
 
 int main(){
 
-    int a;
-    int b;
+    int a=0;
+    int b=0;
     scanf("%d %d",&a, &b);
 
 
 
 
     printf ("The Armstrong numbers are:");
-
          for (int i = a; i <= b; i++)
     {
         if (isArmstrong(i) == 1) {
-        printf(" %d", i);
+            printf(" %d", i);
 
         }
 
@@ -31,7 +30,7 @@ int main(){
           for (int i = a; i <= b; i++)
     {
         if (isPalindrome(i) == 1) {
-            printf(" %d", i);
+                printf(" %d", i);
 
         }
 
@@ -45,7 +44,7 @@ int main(){
        for (int i = a; i <= b; i++)
     {
         if (isPrime(i) == 1) {
-        printf(" %d", i);
+             printf(" %d", i);
 
         }
 
@@ -59,7 +58,7 @@ int main(){
         for (int i = a; i <= b; i++)
     {
         if (isStrong(i) == 1) {
-        printf(" %d", i);
+            printf(" %d", i);
 
         }
 
