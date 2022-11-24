@@ -16,30 +16,16 @@ int POW(int base, int power)
     }
 }
 
-int recReverse(int num){
-    int temp;
-    int sum=0;
-    if(num!=0){
-
-            temp = num % 10;
-            sum = sum * 10 + temp;
-            recReverse(num / 10);
-    }
-        else
-            return sum;
-    return sum;
-} 
-
-int isPalindrome(int num){
-
-    if (num == recReverse((num)))
-    {
-        return 1;
-    }
-    return 0;
-
-
+int recReverse(int num, int sum) {
+	return (num == 0 ? sum:recReverse((num / 10),((sum*10) + (num%10))));
 }
+
+int isPalindrome(int num) {
+    	return (num == recReverse(num,0));
+}
+
+
+
 
 int sumArm(int Number, int len)
 {
