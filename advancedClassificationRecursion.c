@@ -4,6 +4,17 @@
 #include <math.h>
 #include "NumClass.h"
 
+int POW(int base, int power)
+{
+    if(power == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return base * POW(base, power - 1);
+    }
+}
 
 int recReverse(int num){
     int temp;
@@ -37,7 +48,7 @@ int sumArm(int Number, int len)
   if (Number > 0)
    {
      R = Number %10;
-     Sum = Sum + pow(R, len);
+     Sum = Sum + POW(R, len);
      sumArm (Number /10, len);
      return Sum;
    }
