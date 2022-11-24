@@ -58,7 +58,7 @@ int main(){
 
         for (int i = a; i <= b; i++)
     {
-        if (isPrime(i) == 1) {
+        if (isStrong(i) == 1) {
         printf(" %d", i);
     
         }
