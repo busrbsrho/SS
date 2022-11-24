@@ -28,36 +28,24 @@ int isArmstrong (int num){
 }
 
 
-int isPalindrome(int num){
+int isPalindrome(int num)
+{
 
-    int counter = 0;
-    int tempNum = num;
-    int numCP = num;
-    while (tempNum != 0)
+    int plinum=0;
+    int temp=num;
+    while (temp!=0)
     {
-        counter ++;
-        tempNum/=10;
-    }
+        plinum=(plinum*10)+temp%10;
+        temp/=10;
 
-    int counterCP = counter;
-    int i;
-    for ( i = 0; i < (counter/2); i++)
+    }
+    if(num==plinum)
     {
-        if (numCP / (pow(10,counterCP-1)) != numCP % 10)
-        {
-            return 0;
-        }
-        else {
-            numCP = numCP % (int)(pow(10,counterCP-1));
-            numCP /= 10;
-            counter--;
-
-        }
-        
+        return 1;
     }
-    return 1;
+    return 0;
+    
     
 
 }
-
 
