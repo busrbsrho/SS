@@ -18,7 +18,7 @@ int POW(int base, int power)
 
 int recReverse(int num){
     int temp;
-    static int sum=0;
+    int sum=0;
     if(num!=0){
 
             temp = num % 10;
@@ -43,7 +43,7 @@ int isPalindrome(int num){
 
 int sumArm(int Number, int len)
 {
-  static int R, Sum = 0;
+  int R, Sum = 0;
   
   if (Number > 0)
    {
